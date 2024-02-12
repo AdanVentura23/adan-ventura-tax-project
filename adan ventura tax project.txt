@@ -1,10 +1,10 @@
-Python 3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license" for more information.
->>> flat_tax_rate = 0.20
->>> standard_deduction = 10000
->>> dependent_deduction = 3000                        gross_income = float(input("Enter your gross income: $"))                                 num_dependents = int(input("Enter the number of dependents: "))                                taxable_income = gross_income - standard_deduction - (num_dependent * dependent_deduction)                if taxable_income < 0:                        taxable_income = 0                                income_tax = taxable_income * flat_tax_rate                                print("The income tax is: $" + str(round(income_tax, 2)))
-  File "<stdin>", line 1
-    dependent_deduction = 3000                        gross_income = float(input("Enter your gross income: $"))                                 num_dependents = int(input("Enter the number of dependents: "))                                                           taxable_income = gross_income - standard_deduction - (num_dependent * dependent_deduction)                                                  if taxable_income < 0:                                                                                                                                           taxable_income = 0                                                                                                                                                  income_tax = taxable_income * flat_tax_rate                                                                                                                 print("The income tax is: $" + str(round(income_tax, 2)))
-                        ^^^^^^^^^^^^
-SyntaxError: invalid syntax
->>>
+flat_tax_rate = 0.20
+standard_deduction = 10000
+dependent_deduction = 3000
+gross_income = float(input("Enter your gross income: $"))
+num_dependents = int(input("Enter the number of dependents: "))
+taxable_income = gross_income - standard_deduction - (num_dependents * dependent_deduction)
+if taxable_income < 0:
+    taxable_income = 0
+    income_tax = taxable_income * flat_tax_rate
+    ptint("The income tax is: $" + str(round(income_tax, 2)))
